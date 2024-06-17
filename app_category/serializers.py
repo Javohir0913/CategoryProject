@@ -13,9 +13,11 @@ class MiddleCategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = MiddleCategory
         fields = '__all__'
+        depth = 1
 
 
 class SubCategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = SubCategory
         fields = '__all__'
+        depth = 1
