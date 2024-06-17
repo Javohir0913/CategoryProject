@@ -34,7 +34,7 @@ urlpatterns = [
     # category
     path('api/category/', include('app_category.urls')),
     # service
-    # path('api/service/', include('app_service.urls')),
+    path('api/service/', include('app_service.urls')),
     # Swagger
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
