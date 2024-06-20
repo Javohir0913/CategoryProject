@@ -1,5 +1,5 @@
 from app_service.models import Service
-from app_service.serializers import GetServiceSerializers, ServiceSerializers
+from app_service.serializers import GetServiceSerializer, ServiceSerializer
 from rest_framework import viewsets, permissions
 
 
@@ -9,5 +9,5 @@ class ServiceViewset(viewsets.ModelViewSet):
     
     def get_serializer_class(self):
         if self.request.method == 'GET':
-            return GetServiceSerializers
-        return ServiceSerializers
+            return GetServiceSerializer
+        return ServiceSerializer
